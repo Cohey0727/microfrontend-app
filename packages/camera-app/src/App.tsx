@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Powered by React</h1>
+      <h1>Camera App Powered by React</h1>
       <Link to="/">Home</Link>
     </div>
   );
