@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cameraImage from "./images/camera-icon.png";
 import calendarImage from "./images/calendar-icon.png";
+import fileImage from "./images/file-icon.png";
 
 const apps = [
   {
@@ -13,6 +14,11 @@ const apps = [
     icon: calendarImage,
     title: "Calendar App",
     link: "/calendar",
+  },
+  {
+    icon: fileImage,
+    title: "File App",
+    link: "/file",
   },
 ];
 

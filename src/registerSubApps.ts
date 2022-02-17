@@ -11,10 +11,17 @@ const registerSubApps = () => {
     },
     {
       name: "calendar-app",
-      entry: "//localhost:3003",
+      entry: "//localhost:3002",
       container: "#sub-container",
       activeRule: "/calendar",
       props: { basename: "/calendar" },
+    },
+    {
+      name: "file-app",
+      entry: "//localhost:3003",
+      container: "#sub-container",
+      activeRule: "/file",
+      props: { basename: "/file" },
     },
   ]);
   start();

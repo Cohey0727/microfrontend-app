@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "serve -s public -p 3002 -C"
+    "start": "serve -s public -p 3003 -C"
   }
 }
