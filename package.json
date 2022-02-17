@@ -19,7 +19,11 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "run-p start:*",
+    "start:main": "react-scripts start",
+    "start:camera-app": "cd packages/camera-app && yarn start",
+    "start:calendar-app": "cd packages/calendar-app && yarn serve",
+    "start:file-app": "cd packages/file-app && serve -s public -p 3003 -C",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -41,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
