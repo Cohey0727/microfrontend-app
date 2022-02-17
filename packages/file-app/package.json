@@ -1,0 +1,9 @@
+{
+  "name": "file_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve -s public -p 3002 -C"
+  }
+}
