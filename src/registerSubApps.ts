@@ -7,7 +7,14 @@ const registerSubApps = () => {
       entry: "//localhost:3001",
       container: "#sub-container",
       activeRule: "/camera",
-      props: { basename: "/" },
+      props: { basename: "/camera" },
+    },
+    {
+      name: "calendar-app",
+      entry: "//localhost:3003",
+      container: "#sub-container",
+      activeRule: "/calendar",
+      props: { basename: "/calendar" },
     },
   ]);
   start();

@@ -1,12 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cameraImage from "./images/camera-icon.png";
+import calendarImage from "./images/calendar-icon.png";
 
 const apps = [
   {
     icon: cameraImage,
     title: "Camera App",
     link: "/camera",
+  },
+  {
+    icon: calendarImage,
+    title: "Calendar App",
+    link: "/calendar",
   },
 ];
 
@@ -33,7 +39,12 @@ function App() {
           return (
             <div key={app.link} style={{ padding: "0 16px" }}>
               <Link to={app.link}>
-                <img width="100%" src={app.icon} alt={app.title} />
+                <img
+                  width="100%"
+                  src={app.icon}
+                  alt={app.title}
+                  style={{ borderRadius: 16 }}
+                />
               </Link>
             </div>
           );
